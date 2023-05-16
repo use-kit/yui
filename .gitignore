@@ -1,6 +1,10 @@
 # files
 .DS_Store
 
+# Dependency directories
+node_modules/
+jspm_packages/
+
 # Logs
 logs
 *.log

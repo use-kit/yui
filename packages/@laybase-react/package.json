@@ -14,5 +14,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "use-kit",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
