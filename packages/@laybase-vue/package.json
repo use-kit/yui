@@ -1,0 +1,18 @@
+{
+  "name": "@laybase/vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "typings": "dist/index.d.ts",
+  "module": "index.js",
+  "files": [
+    "dist/",
+    "README.md",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "use-kit",
+  "license": "Apache-2.0"
+}

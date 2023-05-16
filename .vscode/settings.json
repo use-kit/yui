@@ -1,0 +1,21 @@
+{
+  // ===========================================
+  // =============== Editor ====================
+  // ===========================================
+  "workbench.startupEditor": "none",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.suggest.preview": true,
+  "editor.suggestSelection": "first",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "breadcrumbs.enabled": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // ===========================================
+  // =============== CSpell ====================
+  // ===========================================
+  "cSpell.words": ["laybase"]
+}
