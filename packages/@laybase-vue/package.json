@@ -9,9 +9,9 @@
     "dist"
   ],
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "sideEffects": false,
   "exports": {
