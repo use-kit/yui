@@ -17,5 +17,5 @@
   // ===========================================
   // =============== CSpell ====================
   // ===========================================
-  "cSpell.words": ["laybase", "preinstall"]
+  "cSpell.words": ["antfu", "laybase", "preinstall", "typecheck", "unocss"]
 }
