@@ -17,6 +17,7 @@ export default defineConfig({
     vue(),
     dts({
       outputDir: 'dist/types',
+      insertTypesEntry: true,
     }),
     // libCss(),
     unoCSS(),
