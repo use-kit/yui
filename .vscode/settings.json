@@ -17,5 +17,11 @@
   // ===========================================
   // =============== CSpell ====================
   // ===========================================
-  "cSpell.words": ["laybase", "preinstall"]
+  "cSpell.words": [
+    "laybase",
+    "preinstall"
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
