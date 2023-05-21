@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
 import libCSS from 'vite-plugin-libcss'
 import unoCSS from 'unocss/vite'
@@ -14,7 +13,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    react(),
     dts({
       outputDir: 'dist/types',
     }),

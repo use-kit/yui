@@ -9,17 +9,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build",
+    "build:dev": "vite build -w",
+    "build:prod": "vite build",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
   "sideEffects": false,
-  "exports": {
-    ".": {
-      "require": "./dist/index.umd.js",
-      "import": "./dist/index.mjs"
-    }
-  },
   "author": "use-kit",
   "license": "Apache-2.0",
   "devDependencies": {
@@ -29,7 +24,6 @@
     "@types/react-dom": "^18.2.4",
     "@unocss/eslint-config": "^0.51.13",
     "@unocss/reset": "^0.51.13",
-    "@vitejs/plugin-react": "^4.0.0",
     "eslint": "^8.40.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

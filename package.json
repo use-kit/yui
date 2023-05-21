@@ -7,6 +7,8 @@
     "packages/*"
   ],
   "scripts": {
+    "dev:react": "pnpm --filter @laybase/react run build:dev & pnpm -w run play:react",
+    "play:react": "pnpm --filter play-react run dev",
     "preinstall": "npx -y only-allow pnpm"
   },
   "packageManager": "^pnpm@7.9.0",
