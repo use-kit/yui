@@ -24,6 +24,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.6",
+    "@iconify-json/mdi": "^1.1.52",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "@unocss/eslint-config": "^0.51.13",

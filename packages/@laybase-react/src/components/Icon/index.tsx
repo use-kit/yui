@@ -2,6 +2,9 @@ import * as React from 'react'
 
 export const Icon: React.FC<{ icon: string }> = ({ icon }) => {
   return (
-    <span className={icon} />
+    <>
+      <div className={icon} />
+      <div className='i-mdi:ab-testing' />
+    </>
   )
 }

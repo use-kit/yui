@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
-// import libCss from 'vite-plugin-libcss'
+import libCSS from 'vite-plugin-libcss'
 import unoCSS from 'unocss/vite'
 
 export default defineConfig({
@@ -18,7 +18,7 @@ export default defineConfig({
     dts({
       outputDir: 'dist/types',
     }),
-    // libCss(),
+    libCSS(),
     unoCSS(),
   ],
 })
