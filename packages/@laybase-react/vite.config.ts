@@ -11,6 +11,14 @@ export default defineConfig({
       name: '@laybase/react',
       fileName: 'index',
     },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+        },
+      },
+    },
   },
   plugins: [
     dts({

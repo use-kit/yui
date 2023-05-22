@@ -1,12 +1,14 @@
-import { LayIcon } from '@laybase/react'
+import { Icon } from '@laybase/react'
 
-function Icon() {
+function BaseIcon() {
   return (
     <>
       <div>Icon</div>
-      <LayIcon icon="i-mdi:ab-testing" />
+      <Icon icon="i-carbon:home" />
+      <Icon icon='i-mdi:abjad-arabic' />
+      <Icon icon='i-mdi:ab-testing' />
     </>
   )
 }
 
-export default Icon
+export default BaseIcon

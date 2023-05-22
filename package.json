@@ -1,17 +1,17 @@
 {
   "name": "laybase",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "packageManager": "pnpm@8.3.1",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
+    "clean": "rimraf packages/*/dist",
+    "cleanup": "rimraf 'packages/**/node_modules' 'playgrounds/**/node_modules' 'node_modules'",
     "dev:react": "pnpm --filter @laybase/react run build:dev & pnpm -w run play:react",
     "play:react": "pnpm --filter play-react run dev",
     "preinstall": "npx -y only-allow pnpm"
   },
-  "packageManager": "^pnpm@7.9.0",
   "engines": {
     "node": ">=16",
     "pnpm": ">=7"

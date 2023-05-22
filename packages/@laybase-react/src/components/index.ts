@@ -1,1 +1,1 @@
-export { Icon as LayIcon } from './Icon'
+export * from './Icon'
