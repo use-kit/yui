@@ -17,6 +17,7 @@
     "baseUrl": "./",
     "paths": {
       "@laybase/react": ["src"],
+      "vite": ["node_modules/vite"],
       "*": ["src/*", "node_modules/*"]
     },
     "jsx": "react",

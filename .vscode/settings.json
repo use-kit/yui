@@ -17,5 +17,11 @@
   // ===========================================
   // =============== CSpell ====================
   // ===========================================
-  "cSpell.words": ["antfu", "laybase", "preinstall", "typecheck", "unocss"]
+  "cSpell.words": [
+    "laybase",
+    "preinstall"
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
