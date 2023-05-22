@@ -1,1 +1,1 @@
-export { default as LayIcon } from './Icon/index.vue'
+export { default as Icon } from './Icon/index.vue'

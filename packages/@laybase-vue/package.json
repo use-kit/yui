@@ -5,12 +5,6 @@
   "author": "use-kit",
   "license": "Apache-2.0",
   "sideEffects": false,
-  "exports": {
-    ".": {
-      "require": "./dist/index.umd.js",
-      "import": "./dist/index.mjs"
-    }
-  },
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
   "types": "dist/types/index.d.ts",
@@ -27,11 +21,10 @@
     "@iconify-json/mdi": "^1.1.52",
     "@unocss/eslint-config": "^0.51.13",
     "@unocss/reset": "^0.51.13",
-    "@vitejs/plugin-vue": "^4.2.3",
     "eslint": "^8.41.0",
     "typescript": "^5.0.4",
     "unocss": "^0.51.13",
-    "vite": "^4.3.8",
+    "vite": "^4.3.7",
     "vite-plugin-dts": "^2.3.0",
     "vite-plugin-libcss": "^1.0.6",
     "vue": "^3.3.4",

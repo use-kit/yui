@@ -5,11 +5,10 @@ defineProps<{
 
 defineOptions({
   name: 'Icon',
-  inheritAttrs: false
+  inheritAttrs: false,
 })
 </script>
 
 <template>
   <div :class="icon" />
-  <div class="lay-icon" i-mdi-home />
 </template>

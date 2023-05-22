@@ -17,6 +17,7 @@
     "baseUrl": "./",
     "paths": {
       "@laybase/vue": ["src"],
+      "vite": ["node_modules/vite"],
       "*": ["src/*", "node_modules/*"]
     },
     "esModuleInterop": true,
