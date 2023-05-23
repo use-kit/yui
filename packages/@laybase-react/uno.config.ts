@@ -12,11 +12,17 @@ export default defineConfig({
     ],
   ],
   presets: [
-    presetUno(),
+    presetUno({
+      variablePrefix: 'lay-',
+    }),
     presetAttributify(),
     presetIcons({
-      scale: 1.2,
+      scale: 1,
       warn: true,
+      extraProperties: {
+        'display': 'inline-block',
+        'vertical-align': 'middle',
+      },
     }),
     presetWebFonts({
       fonts: {

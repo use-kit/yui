@@ -1,6 +1,9 @@
 import * as React from 'react'
 
-export interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'type' | 'size' | 'radius' | 'fluid' | 'prefix' | 'suffix'> {
+export interface ButtonProps extends Omit<
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  'type' | 'size' | 'state' | 'radius' | 'fluid' | 'prefix' | 'suffix'
+> {
   /**
    * 按钮大小，默认 md；
    * xs - 极小
@@ -12,7 +15,11 @@ export interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonE
   /**
    * type 按钮类型，primary - 默认实心类型，solid - 线框类型，text - 文本类型
    */
-  type?: 'primary' | 'solid' | 'text'
+  type?: 'primary' | 'outline' | 'text'
+  /**
+   * 按钮颜色状态，normal - 正常主题色、warn - 警告，danger - 严重
+   */
+  state?: 'normal' | 'warn' | 'danger'
   /**
    * disabled 是否禁用
    */
@@ -53,6 +60,7 @@ const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const {
     size = 'md',
     type = 'primary',
+    state = 'normal',
     disabled = false,
     loading = false,
     radius = false,
