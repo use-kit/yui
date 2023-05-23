@@ -4,11 +4,10 @@
   // ===========================================
   "workbench.startupEditor": "none",
   "editor.tabSize": 2,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.suggest.preview": true,
   "editor.suggestSelection": "first",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -17,11 +16,15 @@
   // ===========================================
   // =============== CSpell ====================
   // ===========================================
-  "cSpell.words": [
-    "laybase",
-    "preinstall"
-  ],
+  "cSpell.words": ["laybase", "preinstall"],
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  // ===========================================
+  // =============== Eslint ====================
+  // ===========================================
+  "eslint.run": "onType",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
   }
 }
