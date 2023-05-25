@@ -90,6 +90,15 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1
 
+  packages/@laybase-types:
+    devDependencies:
+      '@types/node':
+        specifier: ^20.2.3
+        version: 20.2.3
+      unbuild:
+        specifier: ^1.2.1
+        version: 1.2.1
+
   packages/@laybase-vue:
     devDependencies:
       '@antfu/eslint-config':
@@ -101,6 +110,9 @@ importers:
       '@iconify/vue':
         specifier: ^4.1.1
         version: 4.1.1(vue@3.3.4)
+      '@laybase/types':
+        specifier: workspace:*
+        version: link:../@laybase-types
       '@unocss/eslint-config':
         specifier: ^0.52.3
         version: 0.52.3(eslint@8.41.0)(typescript@5.0.4)
