@@ -1,5 +1,6 @@
 {
   "name": "@laybase/shared",
+  "type": "module",
   "version": "1.0.0",
   "author": "use-kit",
   "license": "Apache-2.0",
@@ -17,14 +18,14 @@
   },
   "dependencies": {
     "@use-kit/functions": "^0.1.2",
-    "fs-extra": "^11.1.1"
+    "fast-glob": "^3.2.12"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.16",
     "@iconify-json/mdi": "^1.1.52",
     "@types/fs-extra": "^11.0.1",
     "@types/node": "^20.2.3",
-    "fast-glob": "^3.2.12",
+    "fs-extra": "^11.1.1",
     "unbuild": "^1.2.1"
   }
 }
