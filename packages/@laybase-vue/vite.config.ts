@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
 import libCSS from 'vite-plugin-libcss'
 import unoCSS from 'unocss/vite'
@@ -21,6 +22,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    vue(),
     dts({
       outputDir: 'dist/types',
     }),

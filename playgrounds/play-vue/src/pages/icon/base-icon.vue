@@ -4,5 +4,6 @@ import { Icon } from '@laybase/vue'
 
 <template>
   <div>Icon</div>
-  <Icon icon="i-mdi-home" />
+  <Icon icon="mdi-home" />
+  <Icon icon="carbon-home" />
 </template>

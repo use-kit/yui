@@ -1,9 +1,14 @@
 import * as React from 'react'
+import { Icon as Iconify } from '@iconify/react'
 
-export const Icon: React.FC<{ icon: string }> = ({ icon }) => {
+const Icon: React.FC<{ icon: string }> = ({ icon }) => {
   return (
     <>
-      <div className={icon} />
+      <div>
+        <Iconify icon={icon} />
+      </div>
     </>
   )
 }
+
+export default Icon

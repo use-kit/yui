@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
+
 defineProps<{
   icon: string
 }>()
@@ -10,5 +12,7 @@ defineOptions({
 </script>
 
 <template>
-  <div :class="icon" />
+  <div>
+    <Icon :icon="icon" />
+  </div>
 </template>
