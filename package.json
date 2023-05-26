@@ -8,6 +8,7 @@
   "scripts": {
     "clean": "rimraf packages/*/dist",
     "cleanup": "rimraf 'packages/**/node_modules' 'playgrounds/**/node_modules' 'node_modules'",
+    "build": "pnpm -r --filter='./packages/*' run build",
     "dev:react": "pnpm --filter @laybase/react run build:dev & pnpm -w run play:react",
     "play:react": "pnpm --filter play-react run dev",
     "preinstall": "npx -y only-allow pnpm"

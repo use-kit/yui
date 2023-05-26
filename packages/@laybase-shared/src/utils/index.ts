@@ -1,1 +1,2 @@
-export * from './svg'
+export * from './style'
+// export * from './svg'

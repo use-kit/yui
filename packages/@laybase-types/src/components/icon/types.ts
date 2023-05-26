@@ -1,6 +1,6 @@
 export type IconType = string
 
-export type IconSize = 'large' | 'default' | 'small'
+export type IconSize = number | string
 
 export type IconColor = string
 
