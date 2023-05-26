@@ -1,18 +1,34 @@
 <template>
   <div class="content">
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <div class="icon-content">
+      <a href="https://vitejs.dev" target="_blank">
+        <img src="/vite.svg" class="logo" alt="Vite logo" />
+      </a>
+      <a href="https://vuejs.org/" target="_blank">
+        <img src="/vue.svg" class="logo vue" alt="Vue logo" />
+      </a>
+    </div>
+
+    <h1>🎉🎉 LayBase UI Playground 🎉🎉</h1>
   </div>
-  <h1>Vite + Vue</h1>
+
 </template>
 
 <style scoped>
 .content {
+  height: 46rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-content {
+  display: flex;
+}
+
+h1 {
+  font-weight: 450;
 }
 
 .logo {

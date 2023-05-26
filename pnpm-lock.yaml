@@ -25,6 +25,9 @@ importers:
       '@laybase/shared':
         specifier: workspace:*
         version: link:../@laybase-shared
+      '@laybase/types':
+        specifier: workspace:*
+        version: link:../@laybase-types
       '@types/react':
         specifier: ^18.2.6
         version: 18.2.6
@@ -65,8 +68,8 @@ importers:
         specifier: ^2.1.5
         version: 2.1.5
       '@use-kit/functions':
-        specifier: ^0.1.2
-        version: 0.1.2
+        specifier: ^0.1.3
+        version: 0.1.3
     devDependencies:
       '@iconify-json/carbon':
         specifier: ^1.1.16
@@ -90,6 +93,15 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1
 
+  packages/@laybase-types:
+    devDependencies:
+      '@types/node':
+        specifier: ^20.2.3
+        version: 20.2.3
+      unbuild:
+        specifier: ^1.2.1
+        version: 1.2.1
+
   packages/@laybase-vue:
     devDependencies:
       '@antfu/eslint-config':
@@ -101,12 +113,21 @@ importers:
       '@iconify/vue':
         specifier: ^4.1.1
         version: 4.1.1(vue@3.3.4)
+      '@laybase/shared':
+        specifier: workspace:*
+        version: link:../@laybase-shared
+      '@laybase/types':
+        specifier: workspace:*
+        version: link:../@laybase-types
       '@unocss/eslint-config':
         specifier: ^0.52.3
         version: 0.52.3(eslint@8.41.0)(typescript@5.0.4)
       '@unocss/reset':
         specifier: ^0.52.3
         version: 0.52.3
+      '@use-kit/functions':
+        specifier: ^0.1.3
+        version: 0.1.3
       '@vitejs/plugin-vue':
         specifier: ^4.2.3
         version: 4.2.3(vite@4.3.8)(vue@3.3.4)
@@ -148,7 +169,7 @@ importers:
         specifier: ^1.1.52
         version: 1.1.52
       '@laybase/react':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/@laybase-react
       '@types/react':
         specifier: ^18.0.28
@@ -2099,12 +2120,11 @@ packages:
       - rollup
     dev: true
 
-  /@use-kit/functions@0.1.2:
-    resolution: {integrity: sha512-eHYPWFvDbfGvfTqkjmFucG7N4zy3KdEN8Ro/qOInm5Fuegsko3Qm32Kqae9O05ZZ/XDSJXoYj8Bad7LLqMb3Sw==}
+  /@use-kit/functions@0.1.3:
+    resolution: {integrity: sha512-VukRFNIZcGocu/nUpTJjbBqT7hiAClW4OIxUiepAsdFiVB0eAeHLxxVSA7FPpujAgL9Bt/Pv7P3E6e+e9RGAiQ==}
     dependencies:
       dayjs: 1.11.7
       observer-emit: 1.0.1
-    dev: false
 
   /@vitejs/plugin-react@4.0.0(vite@4.3.7):
     resolution: {integrity: sha512-HX0XzMjL3hhOYm+0s95pb0Z7F8O81G7joUHgfDd/9J/ZZf5k4xX6QAMFkKsHFxaHlf6X7GD7+XuaZ66ULiJuhQ==}
@@ -2602,7 +2622,6 @@ packages:
 
   /dayjs@1.11.7:
     resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
-    dev: false
 
   /de-indent@1.0.2:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
@@ -4479,7 +4498,6 @@ packages:
 
   /observer-emit@1.0.1:
     resolution: {integrity: sha512-z7R3kNj351QGUYx2GSDSr9OJTozBdnzfp3MMLVi7LS8VUls/AUOV/LpzIWo6yexAkfGeDzKvKAsnv8iAL07W0Q==}
-    dev: false
 
   /ofetch@1.0.1:
     resolution: {integrity: sha512-icBz2JYfEpt+wZz1FRoGcrMigjNKjzvufE26m9+yUiacRQRHwnNlGRPiDnW4op7WX/MR6aniwS8xw8jyVelF2g==}
