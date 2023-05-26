@@ -25,6 +25,9 @@ importers:
       '@laybase/shared':
         specifier: workspace:*
         version: link:../@laybase-shared
+      '@laybase/types':
+        specifier: workspace:*
+        version: link:../@laybase-types
       '@types/react':
         specifier: ^18.2.6
         version: 18.2.6
@@ -166,7 +169,7 @@ importers:
         specifier: ^1.1.52
         version: 1.1.52
       '@laybase/react':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/@laybase-react
       '@types/react':
         specifier: ^18.0.28

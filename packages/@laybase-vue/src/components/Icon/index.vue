@@ -7,7 +7,7 @@ import { addUnit } from '@laybase/shared'
 import { isUndefined } from '@use-kit/functions'
 import { Icon } from '@iconify/vue'
 
-const props = withDefaults(defineProps<IconProps>(), { size: 'default', color: '' })
+const props = withDefaults(defineProps<IconProps>(), { size: '', color: '' })
 
 defineOptions({
   name: 'Icon',

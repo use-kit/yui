@@ -6,6 +6,6 @@ export type IconColor = string
 
 export interface IconProps {
   icon: IconType
-  size: IconSize
-  color: IconColor
+  size?: IconSize
+  color?: IconColor
 }

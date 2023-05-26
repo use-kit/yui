@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "build:dev": "vite build -w",
-    "build:prod": "vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
@@ -24,6 +24,7 @@
     "@iconify-json/mdi": "^1.1.52",
     "@iconify/react": "^4.1.0",
     "@laybase/shared": "workspace:*",
+    "@laybase/types": "workspace:*",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "@unocss/eslint-config": "^0.51.13",
