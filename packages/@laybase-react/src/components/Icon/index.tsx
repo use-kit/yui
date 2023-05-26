@@ -1,9 +1,23 @@
-import * as React from 'react'
+import type { IconProps } from '@laybase/types'
 
-export const Icon: React.FC<{ icon: string }> = ({ icon }) => {
+import * as React from 'react'
+import { addUnit } from '@laybase/shared'
+import { isUndefined } from '@use-kit/functions'
+import { Icon as Iconify } from '@iconify/react'
+
+const Icon: React.FC<IconProps> = ({ icon, size, color }) => {
+  const style: React.CSSProperties = {
+    fontSize: isUndefined(size) ? undefined : addUnit(size),
+    color,
+  }
+
   return (
     <>
-      <div className={icon} />
+      <div style={style}>
+        <Iconify icon={icon} />
+      </div>
     </>
   )
 }
+
+export default Icon

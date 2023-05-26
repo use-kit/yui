@@ -5,7 +5,7 @@ import './index.css'
 function Root() {
   return (
     <>
-      <div>
+      <div className='content'>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -13,7 +13,7 @@ function Root() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>🎉🎉 LayBase UI Playground 🎉🎉</h1>
     </>
   )
 }
