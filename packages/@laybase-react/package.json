@@ -17,14 +17,15 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@laybase/shared": "workspace:*",
+    "@laybase/types": "workspace:*"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.6",
     "@iconify-json/carbon": "^1.1.16",
     "@iconify-json/mdi": "^1.1.52",
     "@iconify/react": "^4.1.0",
-    "@laybase/shared": "workspace:*",
-    "@laybase/types": "workspace:*",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "@unocss/eslint-config": "^0.51.13",
