@@ -1,4 +1,5 @@
 export * from './class'
+export * from './shape'
 export * from './size'
 export * from './style'
 // export * from './svg'
