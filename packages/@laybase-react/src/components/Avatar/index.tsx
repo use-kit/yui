@@ -14,8 +14,7 @@ const Avatar: React.FC<AvatarProps> = ({
   size = 'default',
   shape = 'circle',
 }) => {
-  const [icon, setIcon] = useState('mdi:account')
-  setIcon('mdi:account')
+  const [icon] = useState('mdi:account')
 
   const sizeClass: string[] = getAvatarSizeClass(size)
   const shapeClass: string[] = getAvatarShapeClass(shape)

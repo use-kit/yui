@@ -3,8 +3,8 @@ import { Avatar } from '@laybase/react'
 function BaseAvatar() {
   return (
     <>
-      {/* <Avatar /> */}
-      <span>Test</span>
+      <span>Avatar</span>
+      <Avatar />
     </>
   )
 }
