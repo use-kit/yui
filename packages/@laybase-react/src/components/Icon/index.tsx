@@ -1,6 +1,6 @@
 import type { IconProps } from '@laybase/types'
 
-import * as React from 'react'
+import React from 'react'
 import { addUnit } from '@laybase/shared'
 import { isUndefined } from '@use-kit/functions'
 import { Icon as Iconify } from '@iconify/react'
