@@ -2,7 +2,8 @@
 import type { InputProps } from '@laybase/types'
 
 import { ref } from 'vue'
-import { classJoin, getInputSizeClass } from '@laybase/shared'
+import classNames from 'classnames'
+import { getInputSizeClass } from '@laybase/shared'
 
 const props = withDefaults(defineProps<InputProps>(), {
   type: 'text',
@@ -20,7 +21,7 @@ defineOptions({
 })
 
 const sizeClass: string[] = getInputSizeClass(props.size)
-const cls: string = classJoin(sizeClass)
+const cls: string = classNames(sizeClass)
 
 const defaultValue = ref(props.value)
 

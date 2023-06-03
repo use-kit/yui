@@ -25,6 +25,12 @@
   // ===========================================
   "eslint.run": "onType",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-  }
+    "source.fixAll.eslint": true
+  },
+  "unocss.root": [
+    "packages/@laybase-react",
+    "packages/@laybase-vue",
+    "playgrounds/play-react",
+    "playgrounds/play-vue"
+  ]
 }

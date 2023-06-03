@@ -1,7 +1,8 @@
 import type { InputEvent, InputProps } from '@laybase/types'
 
 import React, { useState } from 'react'
-import { classJoin, getInputSizeClass } from '@laybase/shared'
+import classNames from 'classnames'
+import { getInputSizeClass } from '@laybase/shared'
 
 const Input: React.FC<InputProps & InputEvent> = ({
   type = 'text',
@@ -12,7 +13,7 @@ const Input: React.FC<InputProps & InputEvent> = ({
   onChange,
 }) => {
   const sizeClass: string[] = getInputSizeClass(size)
-  const cls: string = classJoin(sizeClass)
+  const cls: string = classNames(sizeClass)
 
   const [defaultValue, setDefaultValue] = useState(value)
 
