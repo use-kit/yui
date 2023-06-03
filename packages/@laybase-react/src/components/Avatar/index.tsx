@@ -1,8 +1,8 @@
 import type { AvatarProps } from '@laybase/types'
 
 import React, { useState } from 'react'
+import classNames from 'classnames'
 import {
-  classJoin,
   getAvatarShapeClass,
   getAvatarSizeClass,
 } from '@laybase/shared'
@@ -18,7 +18,7 @@ const Avatar: React.FC<AvatarProps> = ({
 
   const sizeClass: string[] = getAvatarSizeClass(size)
   const shapeClass: string[] = getAvatarShapeClass(shape)
-  const cls: string = classJoin(sizeClass, shapeClass)
+  const cls: string = classNames(sizeClass, shapeClass)
 
   function Render() {
     if (src) {

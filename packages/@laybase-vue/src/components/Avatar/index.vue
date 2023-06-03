@@ -2,8 +2,8 @@
 import type { AvatarProps } from '@laybase/types'
 
 import { computed } from 'vue'
+import classNames from 'classnames'
 import {
-  classJoin,
   getAvatarShapeClass,
   getAvatarSizeClass,
 } from '@laybase/shared'
@@ -19,7 +19,7 @@ const icon = computed(() => 'mdi:account')
 
 const sizeClass: string[] = getAvatarSizeClass(props.size)
 const shapeClass: string[] = getAvatarShapeClass(props.shape)
-const cls: string = classJoin(sizeClass, shapeClass)
+const cls: string = classNames(sizeClass, shapeClass)
 </script>
 
 <template>
