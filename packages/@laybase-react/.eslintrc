@@ -1,6 +1,14 @@
 {
   "extends": "@antfu",
   "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "ignoreUrls": true,
+        "ignoreStrings": true
+      }
+    ],
     "no-console": "off"
   }
 }
