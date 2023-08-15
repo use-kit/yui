@@ -4,9 +4,8 @@ function BaseIcon() {
   return (
     <>
       <div>Icon</div>
-      <Icon icon="i-carbon:home" />
-      <Icon icon='i-mdi:abjad-arabic' />
-      <Icon icon='i-mdi:ab-testing' />
+      <Icon icon='mdi-light:home' size={22} color='orange' />
+      <Icon icon="carbon:home" color='red' />
     </>
   )
 }

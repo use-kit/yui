@@ -17,9 +17,10 @@
     "baseUrl": "./",
     "paths": {
       "@laybase/vue": ["src"],
-      "vite": ["node_modules/vite"],
+      "vite": ["node_modules/vite", "vite/client"],
       "*": ["src/*", "node_modules/*"]
     },
+    "types": ["vite/client"],
     "esModuleInterop": true,
     "target": "ESNext",
     "allowJs": true,
