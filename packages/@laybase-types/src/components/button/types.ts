@@ -14,5 +14,5 @@ export interface ButtonProps {
 }
 
 export interface ButtonEvent {
-  onClick?: (value: string) => void
+  onClick?: () => void
 }
