@@ -1,4 +1,5 @@
 type DefaultSize = 'large' | 'default' | 'small'
+
 export type AvatarSize = DefaultSize & string
 
 export type AvatarSrc = string
