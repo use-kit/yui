@@ -11,5 +11,5 @@ export interface CheckboxProps {
 }
 
 export interface CheckboxEvent {
-  onChange?: (value: string) => void
+  onChange?: (value: boolean) => void
 }
