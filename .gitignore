@@ -5,6 +5,10 @@
 node_modules/
 jspm_packages/
 
+# Compiled output
+/dist
+/out
+
 # Logs
 logs
 *.log
