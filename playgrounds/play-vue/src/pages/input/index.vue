@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Input } from '@laybase/vue'
+import { Input } from '@yui/vue'
 
 function handleChange(value: string) {
   console.log('value:', value)
@@ -8,5 +8,5 @@ function handleChange(value: string) {
 
 <template>
   Default: <input />
-  Laybase: <Input placeholder="place input" @change="handleChange" />
+  YUI: <Input placeholder="place input" @change="handleChange" />
 </template>

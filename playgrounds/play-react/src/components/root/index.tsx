@@ -13,7 +13,7 @@ function Root() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>🎉🎉 LayBase UI Playground 🎉🎉</h1>
+      <h1>🎉🎉 YUI UI Playground 🎉🎉</h1>
     </>
   )
 }

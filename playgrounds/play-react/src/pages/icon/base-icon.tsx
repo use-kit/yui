@@ -1,4 +1,4 @@
-import { Icon } from '@laybase/react'
+import { Icon } from '@yui/react'
 
 function BaseIcon() {
   return (

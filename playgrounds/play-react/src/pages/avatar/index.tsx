@@ -1,4 +1,4 @@
-import { Avatar } from '@laybase/react'
+import { Avatar } from '@yui/react'
 
 function BaseAvatar() {
   return (

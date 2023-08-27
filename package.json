@@ -1,5 +1,5 @@
 {
-  "name": "laybase",
+  "name": "@use-kit/yui",
   "version": "1.0.0",
   "packageManager": "pnpm@8.3.1",
   "workspaces": [
@@ -9,7 +9,7 @@
     "clean": "rimraf packages/*/dist",
     "cleanup": "rimraf 'packages/**/node_modules' 'playgrounds/**/node_modules' 'node_modules'",
     "build": "pnpm -r --filter='./packages/*' run build",
-    "dev:react": "pnpm --filter @laybase/react run build:dev & pnpm -w run play:react",
+    "dev:react": "pnpm --filter @yui/react run build:dev & pnpm -w run play:react",
     "play:react": "pnpm --filter play-react run dev",
     "preinstall": "npx -y only-allow pnpm"
   },
@@ -18,7 +18,7 @@
     "pnpm": ">=7"
   },
   "keywords": [
-    "laybase"
+    "yui"
   ],
   "author": "use-kit",
   "license": "Apache-2.0",

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Avatar } from '@laybase/vue';
+import { Avatar } from '@yui/vue';
 </script>
 
 <template>

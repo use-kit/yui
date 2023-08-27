@@ -1,0 +1,42 @@
+{
+  "name": "@yui/react",
+  "version": "1.0.0",
+  "description": "",
+  "author": "use-kit",
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:dev": "vite build -w",
+    "build": "vite build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@yui/shared": "workspace:*",
+    "@yui/types": "workspace:*",
+    "classnames": "^2.3.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.6",
+    "@iconify-json/carbon": "^1.1.16",
+    "@iconify-json/mdi": "^1.1.52",
+    "@iconify/react": "^4.1.0",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "@unocss/eslint-config": "^0.51.13",
+    "@unocss/reset": "^0.51.13",
+    "eslint": "^8.40.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "unocss": "^0.51.13",
+    "vite": "^4.3.7",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-plugin-libcss": "^1.0.6"
+  }
+}

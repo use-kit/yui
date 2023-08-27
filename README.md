@@ -1,4 +1,4 @@
-# Laybase
+# YUI
 
 A simple and basic ui component library, supports Vue3.x and React
 
@@ -7,11 +7,11 @@ A simple and basic ui component library, supports Vue3.x and React
 ### In React
 
 ```shell
-pnpm i @laybase/react
+pnpm i @yui/react
 ```
 
 ### In Vue
 
 ```shell
-pnpm i @laybase/vue
+pnpm i @yui/vue
 ```

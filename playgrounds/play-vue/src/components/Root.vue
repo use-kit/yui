@@ -9,7 +9,7 @@
       </a>
     </div>
 
-    <h1>🎉🎉 LayBase UI Playground 🎉🎉</h1>
+    <h1>🎉🎉 YUI UI Playground 🎉🎉</h1>
   </div>
 
 </template>

@@ -1,0 +1,23 @@
+{
+  "name": "@yui/types",
+  "type": "module",
+  "version": "1.0.0",
+  "author": "use-kit",
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "unbuild": "^1.2.1"
+  }
+}

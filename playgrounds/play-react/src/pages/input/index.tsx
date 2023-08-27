@@ -1,4 +1,4 @@
-import { Input } from '@laybase/react'
+import { Input } from '@yui/react'
 
 function BaseInput() {
   function handleChange(value: string) {
@@ -8,7 +8,7 @@ function BaseInput() {
   return (
     <>
       Default: <input />
-      Laybase: <Input placeholder="place input" onChange={handleChange} />
+      YUI: <Input placeholder="place input" onChange={handleChange} />
     </>
   )
 }

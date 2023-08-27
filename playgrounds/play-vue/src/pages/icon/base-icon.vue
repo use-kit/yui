@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Icon } from '@laybase/vue'
+import { Icon } from '@yui/vue'
 </script>
 
 <template>
