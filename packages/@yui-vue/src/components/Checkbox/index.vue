@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<CheckboxProps>(), {
 const emit = defineEmits(['change'])
 
 defineOptions({
-  name: 'LayCheckbox',
+  name: 'YCheckbox',
   inheritAttrs: false,
 })
 

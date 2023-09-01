@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<InputProps>(), {
 const emit = defineEmits(['change'])
 
 defineOptions({
-  name: 'LayInput',
+  name: 'YInput',
   inheritAttrs: false,
 })
 

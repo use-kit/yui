@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 
 const emit = defineEmits(['click'])
 
-defineOptions({ name: 'LayButton ' })
+defineOptions({ name: 'YButton ' })
 
 const sizeClass: string[] = getButtonSizeClass(props.size)
 const cls: string = classNames('lay-button', props.type, sizeClass)
