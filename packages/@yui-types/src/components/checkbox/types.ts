@@ -1,11 +1,11 @@
-export type CheckoutChecked = boolean
+export type CheckboxChecked = boolean
 
 export type CheckboxDisabled = boolean
 
 export type CheckboxLabel = string
 
 export interface CheckboxProps {
-  checked?: CheckoutChecked
+  checked?: CheckboxChecked
   disabled?: CheckboxDisabled
   label?: CheckboxLabel
 }
