@@ -3,14 +3,14 @@ import type { SwitchProps } from '@yui/types'
 
 import { defineEmits, defineProps } from 'vue'
 
+defineOptions({ name: 'YSwitch ' })
+
 const props = withDefaults(defineProps<SwitchProps>(), {
   checked: false,
   disabled: false,
 })
 
 const emit = defineEmits(['change'])
-
-defineOptions({ name: 'YSwitch ' })
 
 function handleChange(event: Event) {
   emit('change', (event.target as HTMLInputElement).checked)

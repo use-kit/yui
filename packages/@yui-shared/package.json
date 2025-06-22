@@ -18,18 +18,18 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@iconify/utils": "^2.1.5",
-    "@yui/types": "workspace:*",
-    "@use-kit/functions": "^0.1.3"
+    "@iconify/utils": "^2.3.0",
+    "@use-kit/functions": "^0.1.10",
+    "@yui/types": "workspace:*"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.16",
-    "@iconify-json/mdi": "^1.1.52",
-    "@types/fs-extra": "^11.0.1",
-    "@types/node": "^20.2.3",
-    "classnames": "^2.3.2",
-    "fast-glob": "^3.2.12",
-    "fs-extra": "^11.1.1",
+    "@iconify-json/carbon": "^1.2.10",
+    "@iconify-json/mdi": "^1.2.3",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.19.1",
+    "classnames": "^2.5.1",
+    "fast-glob": "^3.3.3",
+    "fs-extra": "^11.3.0",
     "unbuild": "^1.2.1",
     "vitest": "^0.31.4"
   }

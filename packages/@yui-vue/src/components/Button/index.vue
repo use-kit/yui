@@ -4,6 +4,8 @@ import type { ButtonProps } from '@yui/types'
 import classNames from 'classnames'
 import { getButtonSizeClass } from '@yui/shared'
 
+defineOptions({ name: 'YButton ' })
+
 const props = withDefaults(defineProps<ButtonProps>(), {
   type: 'default',
   size: 'default',
@@ -12,8 +14,6 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 })
 
 const emit = defineEmits(['click'])
-
-defineOptions({ name: 'YButton ' })
 
 const sizeClass: string[] = getButtonSizeClass(props.size)
 const cls: string = classNames('lay-button', props.type, sizeClass)

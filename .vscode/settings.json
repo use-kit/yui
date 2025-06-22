@@ -25,7 +25,7 @@
   // ===========================================
   "eslint.run": "onType",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "unocss.root": [
     "packages/@laybase-react",

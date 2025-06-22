@@ -1,7 +1,7 @@
 {
   "name": "@use-kit/yui",
   "version": "1.0.0",
-  "packageManager": "pnpm@8.3.1",
+  "packageManager": "pnpm@8.15.9",
   "workspaces": [
     "packages/*"
   ],
@@ -23,6 +23,6 @@
   "author": "use-kit",
   "license": "Apache-2.0",
   "devDependencies": {
-    "typescript": "^5.0.4"
+    "typescript": "^5.8.3"
   }
 }

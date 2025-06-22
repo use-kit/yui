@@ -5,6 +5,11 @@ import { ref } from 'vue'
 import classNames from 'classnames'
 import { getInputSizeClass } from '@yui/shared'
 
+defineOptions({
+  name: 'YInput',
+  inheritAttrs: false,
+})
+
 const props = withDefaults(defineProps<InputProps>(), {
   type: 'text',
   size: 'default',
@@ -14,11 +19,6 @@ const props = withDefaults(defineProps<InputProps>(), {
 })
 
 const emit = defineEmits(['change'])
-
-defineOptions({
-  name: 'YInput',
-  inheritAttrs: false,
-})
 
 const sizeClass: string[] = getInputSizeClass(props.size)
 const cls: string = classNames(sizeClass)

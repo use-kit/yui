@@ -7,12 +7,12 @@ import { addUnit } from '@yui/shared'
 import { isUndefined } from '@use-kit/functions'
 import { Icon } from '@iconify/vue'
 
-const props = withDefaults(defineProps<IconProps>(), { size: '', color: '' })
-
 defineOptions({
   name: 'Icon',
   inheritAttrs: false,
 })
+
+const props = withDefaults(defineProps<IconProps>(), { size: '', color: '' })
 
 const style = computed<CSSProperties>(() => {
   const { size, color } = props

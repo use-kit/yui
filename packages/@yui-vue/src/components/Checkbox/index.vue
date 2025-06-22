@@ -4,6 +4,11 @@ import type { CheckboxProps } from '@yui/types'
 import { ref } from 'vue'
 import classNames from 'classnames'
 
+defineOptions({
+  name: 'YCheckbox',
+  inheritAttrs: false,
+})
+
 const props = withDefaults(defineProps<CheckboxProps>(), {
   checked: false,
   disabled: false,
@@ -11,11 +16,6 @@ const props = withDefaults(defineProps<CheckboxProps>(), {
 })
 
 const emit = defineEmits(['change'])
-
-defineOptions({
-  name: 'YCheckbox',
-  inheritAttrs: false,
-})
 
 const cls: string = classNames({
   'lay-checkbox': true,

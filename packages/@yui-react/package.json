@@ -20,23 +20,23 @@
   "dependencies": {
     "@yui/shared": "workspace:*",
     "@yui/types": "workspace:*",
-    "classnames": "^2.3.2"
+    "classnames": "^2.5.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.6",
-    "@iconify-json/carbon": "^1.1.16",
-    "@iconify-json/mdi": "^1.1.52",
-    "@iconify/react": "^4.1.0",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
+    "@iconify-json/carbon": "^1.2.10",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify/react": "^4.1.1",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
     "@unocss/eslint-config": "^0.51.13",
     "@unocss/reset": "^0.51.13",
-    "eslint": "^8.40.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "eslint": "^8.57.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "unocss": "^0.51.13",
-    "vite": "^4.3.7",
+    "vite": "^4.5.14",
     "vite-plugin-dts": "^2.3.0",
-    "vite-plugin-libcss": "^1.0.6"
+    "vite-plugin-libcss": "^1.1.2"
   }
 }
