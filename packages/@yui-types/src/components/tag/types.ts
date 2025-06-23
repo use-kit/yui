@@ -2,6 +2,10 @@ export type TagText = string
 
 export type TagType = 'default'
 
+export type TagColor = 'default' | 'primary' | 'success' | 'warning' | 'info' | 'danger'
+
+export type TagShape = 'default' | 'round' | 'square'
+
 export type TagSize = 'large' | 'default' | 'small'
 
 export type TagDisabled = boolean
@@ -14,6 +18,8 @@ export interface TagProps {
   disabled?: TagDisabled
   outline?: TagOutline
   text?: TagText
+  color?: TagColor
+  shape?: TagShape
 }
 
 export interface TagEvent {
