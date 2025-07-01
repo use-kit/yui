@@ -1,11 +1,9 @@
-export type IconType = string
-
 export type IconSize = number | string
 
 export type IconColor = string
 
-export interface IconProps {
-  icon: IconType
+export interface IconProps<T = string> {
+  icon: T
   size?: IconSize
   color?: IconColor
 }

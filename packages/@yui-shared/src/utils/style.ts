@@ -1,6 +1,6 @@
 import { isNumber, isString } from '@use-kit/functions'
 
-export function addUnit(value?: string | number, defaultUnit = 'px') {
+export function addCSSUnit(value?: string | number, defaultUnit = 'px') {
   if (!value)
     return ''
 
