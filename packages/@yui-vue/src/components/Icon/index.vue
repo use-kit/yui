@@ -3,7 +3,7 @@ import type { CSSProperties } from 'vue'
 import type { IconProps } from '@yui/types'
 
 import { computed } from 'vue'
-import { addUnit } from '@yui/shared'
+import { addCSSUnit } from '@yui/shared'
 import { isUndefined } from '@use-kit/functions'
 import { Icon } from '@iconify/vue'
 
@@ -18,7 +18,7 @@ const style = computed<CSSProperties>(() => {
   const { size, color } = props
 
   return {
-    fontSize: isUndefined(size) ? undefined : addUnit(size),
+    fontSize: isUndefined(size) ? undefined : addCSSUnit(size),
     color,
   }
 })

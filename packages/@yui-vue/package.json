@@ -12,6 +12,7 @@
     "dist"
   ],
   "scripts": {
+    "analyze": "vite dev",
     "build": "vite build",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
@@ -30,6 +31,7 @@
     "@use-kit/functions": "^0.1.10",
     "@vitejs/plugin-vue": "^4.6.2",
     "eslint": "^8.57.1",
+    "lucide-vue-next": "^0.525.0",
     "typescript": "^5.8.3",
     "unocss": "^0.52.7",
     "vite": "^4.5.14",

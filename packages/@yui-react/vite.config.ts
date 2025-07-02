@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import libCSS from 'vite-plugin-libcss'
 import unoCSS from 'unocss/vite'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 export default defineConfig({
   build: {
@@ -26,5 +27,6 @@ export default defineConfig({
     }),
     libCSS(),
     unoCSS(),
+    visualizer({ open: true, gzipSize: true, brotliSize: true }),
   ],
 })
