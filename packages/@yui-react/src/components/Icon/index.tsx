@@ -2,12 +2,9 @@ import type { IconProps } from '@yui/types'
 import type { LucideIcon } from 'lucide-react'
 
 import React from 'react'
-import * as Lucide from 'lucide-react'
 import { addCSSUnit } from '@yui/shared'
 import { isUndefined } from '@use-kit/functions'
 import { Icon as Iconify } from '@iconify/react'
-
-export const IconType = Lucide
 
 const Icon: React.FC<IconProps<LucideIcon | string>> = ({ icon, size, color }) => {
   const style: React.CSSProperties = {
@@ -15,23 +12,12 @@ const Icon: React.FC<IconProps<LucideIcon | string>> = ({ icon, size, color }) =
     color,
   }
 
-  const RenderIcon = () => {
-    if (Object.values(IconType).includes(icon as LucideIcon)) {
-      const LucideIcon = icon as LucideIcon
-      return <LucideIcon />
-    }
-    else {
-      return <Iconify icon={icon as string} />
-    }
+  if (typeof icon === 'object') {
+    const Lucide = icon as LucideIcon
+    return <Lucide size={size} color={color} />
   }
 
-  return (
-    <>
-      <div style={style}>
-        <RenderIcon />
-      </div>
-    </>
-  )
+  return <Iconify icon={icon as string} style={style} />
 }
 
 export default Icon
