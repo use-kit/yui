@@ -15,7 +15,9 @@
     "analyze": "vite dev",
     "build": "vite build",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@yui/shared": "workspace:*",
@@ -26,12 +28,15 @@
     "@antfu/eslint-config": "^0.39.8",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify/vue": "^4.3.0",
+    "@storybook/vue3-vite": "^9.0.15",
     "@unocss/eslint-config": "^0.52.7",
     "@unocss/reset": "^0.52.7",
     "@use-kit/functions": "^0.1.10",
     "@vitejs/plugin-vue": "^4.6.2",
     "eslint": "^8.57.1",
+    "eslint-plugin-storybook": "^9.0.15",
     "lucide-vue-next": "^0.525.0",
+    "storybook": "^9.0.15",
     "typescript": "^5.8.3",
     "unocss": "^0.52.7",
     "vite": "^4.5.14",
@@ -39,5 +44,10 @@
     "vite-plugin-libcss": "^1.1.2",
     "vue": "^3.5.17",
     "vue-tsc": "^1.8.27"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }

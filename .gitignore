@@ -140,3 +140,6 @@ dist
 
 # analyze
 stats.html
+
+*storybook.log
+storybook-static
