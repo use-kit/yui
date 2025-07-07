@@ -1,6 +1,6 @@
 import type { AvatarProps } from '@yui/types'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
 import {
   getAvatarShapeClass,
@@ -13,8 +13,14 @@ const Avatar: React.FC<AvatarProps> = ({
   src,
   size = 'default',
   shape = 'circle',
+  icon,
 }) => {
-  const [icon] = useState('mdi:account')
+  const [defaultIcon, setIcon] = useState('mdi:account')
+
+  useEffect(() => {
+    if (icon)
+      setIcon(icon)
+  }, [icon])
 
   const sizeClass: string[] = getAvatarSizeClass(size)
   const shapeClass: string[] = getAvatarShapeClass(shape)
@@ -29,7 +35,7 @@ const Avatar: React.FC<AvatarProps> = ({
 
     else {
       return (
-        <Icon icon={icon} />
+        <Icon icon={icon ?? defaultIcon} />
       )
     }
   }

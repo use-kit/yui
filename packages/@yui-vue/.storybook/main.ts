@@ -3,7 +3,8 @@ import type { StorybookConfig } from '@storybook/vue3-vite';
 import { join, dirname } from "path"
 
 // import 'virtual:uno.css'
-// import '@unocss/reset/tailwind.css'
+import 'uno.css'
+import '@unocss/reset/tailwind.css'
 
 /**
 * This function is used to resolve the absolute path of a package.
