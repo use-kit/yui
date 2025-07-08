@@ -10,4 +10,5 @@ export interface AvatarProps {
   src?: AvatarSrc
   size?: AvatarSize
   shape?: AvatarShape
+  icon?: string
 }
