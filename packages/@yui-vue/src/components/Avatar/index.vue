@@ -2,7 +2,7 @@
 import type { AvatarProps } from '@yui/types'
 
 import { computed } from 'vue'
-import classNames from 'classnames'
+import cls from 'classnames'
 import {
   baseAvatarStyle,
   getAvatarShapeClass,
@@ -21,7 +21,7 @@ const icon = computed(() => props.icon || 'mdi:account')
 
 const sizeClass: string[] = getAvatarSizeClass(props.size)
 const shapeClass: string[] = getAvatarShapeClass(props.shape)
-const cls: string = classNames(baseAvatarStyle, sizeClass, shapeClass)
+const classes: string = cls(baseAvatarStyle, sizeClass, shapeClass)
 </script>
 
 <template>

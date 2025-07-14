@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ButtonProps } from '@yui/types'
 
-import classNames from 'classnames'
+import cls from 'classnames'
 import { getButtonSizeClass } from '@yui/shared'
 
 defineOptions({ name: 'YButton ' })
@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 const emit = defineEmits(['click'])
 
 const sizeClass: string[] = getButtonSizeClass(props.size)
-const cls: string = classNames('lay-button', props.type, sizeClass)
+const classes: string = cls('lay-button', props.type, sizeClass)
 
 function handleClick() {
   emit('click')

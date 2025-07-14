@@ -1,6 +1,6 @@
 import { flattenArray } from '@use-kit/functions'
 
 export function classJoin(...clsProps: unknown[]) {
-  const cls = flattenArray([...clsProps])
+  const classes = flattenArray([...clsProps])
   return cls.join(' ')
 }

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { TagProps } from '@yui/types'
 
-import classNames from 'classnames'
+import cls from 'classnames'
 import { getTagSizeClass } from '@yui/shared'
 
 const props = withDefaults(defineProps<TagProps>(), {
@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<TagProps>(), {
 const emit = defineEmits(['click'])
 
 const sizeClass: string[] = getTagSizeClass(props.size)
-const cls: string = classNames('tag', {
+const classes: string = cls('tag', {
   [`tag--${props.color}`]: props.color !== 'default',
   [`tag--${props.shape}`]: props.shape !== 'default',
   'tag--outline': props.outline,

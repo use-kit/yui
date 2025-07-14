@@ -1,7 +1,7 @@
 import type { AvatarProps } from '@yui/types'
 
 import React, { useEffect, useState } from 'react'
-import classNames from 'classnames'
+import cls from 'classnames'
 import {
   baseAvatarStyle,
   getAvatarShapeClass,
@@ -25,12 +25,16 @@ const Avatar: React.FC<AvatarProps> = ({
 
   const sizeClass: string[] = getAvatarSizeClass(size)
   const shapeClass: string[] = getAvatarShapeClass(shape)
-  const cls: string = classNames(baseAvatarStyle, sizeClass, shapeClass)
+  const classes: string = cls(sizeClass, shapeClass)
+
+  const Wrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+    <div className='flex items-center justify-center'>{children}</div>
+  )
 
   function Render() {
     if (src) {
       return (
-        <img src={src} />
+        <img src={src} className={classes} />
       )
     }
 
@@ -42,11 +46,9 @@ const Avatar: React.FC<AvatarProps> = ({
   }
 
   return (
-    <>
-      <span className={cls} >
-        <Render />
-      </span>
-    </>
+    <span className='flex items-center justify-center' >
+      <Render />
+    </span>
   )
 }
 

@@ -1,7 +1,7 @@
 import type { InputEvent, InputProps } from '@yui/types'
 
 import React, { useState } from 'react'
-import classNames from 'classnames'
+import cls from 'classnames'
 import { getInputSizeClass } from '@yui/shared'
 
 const Input: React.FC<InputProps & InputEvent> = ({
@@ -13,7 +13,7 @@ const Input: React.FC<InputProps & InputEvent> = ({
   onChange,
 }) => {
   const sizeClass: string[] = getInputSizeClass(size)
-  const cls: string = classNames(sizeClass)
+  const classes: string = cls(sizeClass)
 
   const [defaultValue, setDefaultValue] = useState(value)
 
@@ -27,7 +27,7 @@ const Input: React.FC<InputProps & InputEvent> = ({
 
   return (
     <>
-      <div className={cls} >
+      <div className={classes} >
         {/* <label htmlFor="input">Input</label> */}
         <input
           type={type}

@@ -2,7 +2,7 @@
 import type { InputProps } from '@yui/types'
 
 import { ref } from 'vue'
-import classNames from 'classnames'
+import cls from 'classnames'
 import { getInputSizeClass } from '@yui/shared'
 
 defineOptions({
@@ -21,7 +21,7 @@ const props = withDefaults(defineProps<InputProps>(), {
 const emit = defineEmits(['change'])
 
 const sizeClass: string[] = getInputSizeClass(props.size)
-const cls: string = classNames(sizeClass)
+const classes: string = cls(sizeClass)
 
 const defaultValue = ref(props.value)
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import classNames from 'classnames'
+import cls from 'classnames'
 
 import type { CheckboxEvent, CheckboxProps } from '@yui/types'
 
@@ -17,14 +17,14 @@ const Checkbox: React.FC<CheckboxProps & CheckboxEvent> = ({
     onChange?.(newChecked)
   }
 
-  const cls = classNames({
+  const classes = cls({
     'checkbox': true,
     'checkbox-checked': isChecked,
     'checkbox-disabled': disabled,
   })
 
   return (
-    <div className={cls} onClick={handleChange}>
+    <div className={classes} onClick={handleChange}>
       <span className="checkbox-icon">
         {isChecked && (
           <svg className="checkbox-checked-icon" viewBox="0 0 24 24">

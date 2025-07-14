@@ -1,7 +1,7 @@
 import type { TagProps } from '@yui/types'
 
 import React from 'react'
-import classNames from 'classnames'
+import cls from 'classnames'
 
 const Tag: React.FC<TagProps> = ({
   text,
@@ -9,14 +9,14 @@ const Tag: React.FC<TagProps> = ({
   size = 'default',
   outline = false,
 }) => {
-  const cls: string = classNames('tag', {
+  const classes: string = cls('tag', {
     [`tag--${type}`]: type !== 'default', // color
     [`tag--${size}`]: size !== 'default',
     'tag--outline': outline,
   })
 
   return (
-    <span className={cls}>
+    <span className={classes}>
       {text}
     </span>
   )

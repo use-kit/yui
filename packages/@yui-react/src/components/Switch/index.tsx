@@ -1,14 +1,14 @@
 import type { SwitchEvent, SwitchProps } from '@yui/types'
 
 import React from 'react'
-import classNames from 'classnames'
+import cls from 'classnames'
 
 const Switch: React.FC<SwitchProps & SwitchEvent> = ({
   checked,
   disabled = false,
   onChange,
 }) => {
-  const cls: string = classNames('switch', { checked, disabled })
+  const classes: string = cls('switch', { checked, disabled })
 
   const handleChange = () => {
     if (onChange)
@@ -16,7 +16,7 @@ const Switch: React.FC<SwitchProps & SwitchEvent> = ({
   }
 
   return (
-    <label className={cls}>
+    <label className={classes}>
       <input type="checkbox" checked={checked} disabled={disabled} onChange={handleChange} />
       <span className="slider" />
     </label>

@@ -1,7 +1,7 @@
 import type { ButtonEvent, ButtonProps } from '@yui/types'
 
 import React from 'react'
-import classNames from 'classnames'
+import cls from 'classnames'
 import { getButtonSizeClass } from '@yui/shared'
 
 const Button: React.FC<ButtonProps & ButtonEvent> = ({
@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps & ButtonEvent> = ({
   onClick,
 }) => {
   const sizeClass: string[] = getButtonSizeClass(size)
-  const cls: string = classNames('lay-button', type, sizeClass)
+  const classes: string = cls('lay-button', type, sizeClass)
 
   const handleClick = () => {
     if (onClick)
@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps & ButtonEvent> = ({
   }
 
   return (
-    <button className={cls} disabled={disabled} onClick={handleClick}>
+    <button className={classes} disabled={disabled} onClick={handleClick}>
       {text}
     </button>
   )
