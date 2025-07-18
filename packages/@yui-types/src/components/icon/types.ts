@@ -6,4 +6,5 @@ export interface IconProps<T = string> {
   icon: T
   size?: IconSize
   color?: IconColor
+  className?: string
 }
