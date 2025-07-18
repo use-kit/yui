@@ -26,8 +26,8 @@ const classes: string = cls(baseAvatarStyle, sizeClass, shapeClass)
 
 <template>
   <span :class="cls">
-    <img v-if="src" :src="src" alt="Img">
+    <img v-if="src" :src="src" alt="Img" :class="classes" >
 
-    <Icon v-else :icon="icon" />
+    <Icon v-else :icon="icon" :className="classes" />
   </span>
 </template>

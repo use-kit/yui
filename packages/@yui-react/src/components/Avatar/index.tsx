@@ -25,22 +25,17 @@ const Avatar: React.FC<AvatarProps> = ({
 
   const sizeClass: string[] = getAvatarSizeClass(size)
   const shapeClass: string[] = getAvatarShapeClass(shape)
-  const classes: string = cls(sizeClass, shapeClass)
-
-  const Wrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-    <div className='flex items-center justify-center'>{children}</div>
-  )
 
   function Render() {
     if (src) {
       return (
-        <img src={src} className={classes} />
+        <img src={src} className={cls(sizeClass, shapeClass)} />
       )
     }
 
     else {
       return (
-        <Icon icon={icon ?? defaultIcon} />
+        <Icon icon={icon ?? defaultIcon} className={cls(sizeClass, shapeClass)} />
       )
     }
   }

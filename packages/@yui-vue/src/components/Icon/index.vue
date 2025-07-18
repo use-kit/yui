@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<IconComponentProps>(), { size: '', color:
 
 export type IconComponentProps = IconProps<IconifyIcon | LucideIcon | string>
 
-const { size, color, icon } = props
+const { size, color, icon, className } = props
 const style = computed<CSSProperties>(() => {
   return {
     fontSize: isUndefined(size) ? undefined : addCSSUnit(size),
@@ -31,6 +31,6 @@ const Iconify = icon as IconifyIcon
 </script>
 
 <template>
-  <Lucide v-if="isFunction(icon)" :size="Number(size)" :color="color" />
-  <Icon v-else :icon="Iconify" :style="style" />
+  <Lucide v-if="isFunction(icon)" :size="Number(size)" :color="color" :class="className" />
+  <Icon v-else :icon="Iconify" :style="style" :class="className" />
 </template>
